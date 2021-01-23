@@ -1,0 +1,33 @@
+{
+  "name": "oracle-api-practice",
+  "version": "1.0.0",
+  "description": "API server for Oracle database. (For practice)",
+  "main": "app.js",
+  "scripts": {
+    "start": "set DEBUG=oracle-api-practice:* & nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjcccc/oracle-api-practice.git"
+  },
+  "keywords": [
+    "oracle"
+  ],
+  "author": "seesawgame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjcccc/oracle-api-practice/issues"
+  },
+  "homepage": "https://github.com/tjcccc/oracle-api-practice#readme",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "oracledb": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
