@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  table(class='font-m padding-s margin-l')
+    caption(class='font-l') Products
+    thead
+      tr
+        th Product Id
+        th Product Name
+        th Description
+        th Standard Cost
+        th List Price
+        th Category
+    tbody
+      -
+      each product in data
+        tr
+          td= product.productId
+          td= product.productName
+          td= product.description
+          td= product.standardCost
+          td= product.listPrice
+          td= product.categoryId
+

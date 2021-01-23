@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  table(class='font-m padding-s margin-l')
+    caption(class='font-l') Product Categories
+    thead
+      tr
+        th Category Id
+        th Category Name
+    tbody
+      -
+      each category in data
+        tr
+          td= category.categoryId
+          td= category.categoryName
+
